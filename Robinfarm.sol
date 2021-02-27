@@ -1,5 +1,5 @@
 /** 
- * @title Robinfarm
+ * @title Robinfarm Token
  * @dev Implements voting process along with vote delegation
  */
 
@@ -15,7 +15,7 @@ pragma solidity 0.6.12;
 
  
 // CakeToken with Governance.
-contract Robinfarm is BEP20('Robinfarm', 'ROBIN') {
+contract RobinfarmToken is BEP20('Robinfarm Token', 'ROBIN') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
